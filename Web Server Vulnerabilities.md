@@ -7,18 +7,17 @@ Misconfiguration of a web server can allow for the listing of files contained in
 <img width="744" height="426" alt="SET DVWA security to low" src="https://github.com/user-attachments/assets/0d643652-59a1-4705-8010-458cfb903aad" />
 
 # Step 2: From the results of your reconnaissance, determine which directories are viewable using a web browser and URL manipulation.
-- Perform reconnaissance on the server to find directories where indexing was found.
+- Perform reconnaissance on the server to find directories where indexing was found using "Dirb".
 
       DIRB- command-line web content scanner used primarily for directory brute-forcing and
       reconnaissance during security audits or penetration testing.
 
       Dirb http://10.5.5.12
+<img width="282" height="396" alt="directory" src="https://github.com/user-attachments/assets/d305d6e7-c925-4b8e-987a-39f096250361" />
 
 - Which directories can be accessed through a web browser to list the files and subdirectories that they contain?
 
-<img width="282" height="396" alt="directory" src="https://github.com/user-attachments/assets/d305d6e7-c925-4b8e-987a-39f096250361" />
-
-    The Config, docs and External
+          The Config, docs and External
     
 # Step 3: View the files contained in each directory to find the file containing the flag.
 - Create a URL in the web browser to access the viewable subdirectories. 
